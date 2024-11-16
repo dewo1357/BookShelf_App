@@ -40,7 +40,6 @@ body{
 
 .bagianForm h2{
     text-align: left;
-    
     font-size: 230%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: beige;
@@ -50,7 +49,6 @@ body{
 .bagianForm form{
     width : 90%;
     margin : 1% auto;
-    
 }
 
 #bookFormIsComplete{
@@ -126,7 +124,6 @@ body{
     cursor: pointer;
 }
 
-
 #ButtonSetting{
     background-color: transparent;
     margin-left: 90%;
@@ -144,7 +141,6 @@ body{
     height: 400px;
     overflow-y: scroll;
     padding: 5px;
-   
 }
 
 
@@ -168,15 +164,11 @@ body{
     transition: 1000ms;
 }
 
-
 .componentDone h3{
     margin-top: 0px;
 }
 
-
-
 /*Update & Search Form ======================"*/
-
 
 #searchBook input {
     width : 50%;
@@ -234,7 +226,6 @@ body{
 
 /* Responsive adjustments for smartphone screens */
 @media only screen and (max-width: 900px) {
-
     body {
         padding: 5px;
         font-size: 90%;
@@ -274,11 +265,13 @@ body{
     .bagianForm input {
         font-size: 18px;
         height: 35px;
+        width : 100%;
     }
 
     .bagianForm button {
         font-size: 140%;
         height: 50px;
+        width : 100%;
     }
 
     .option {
