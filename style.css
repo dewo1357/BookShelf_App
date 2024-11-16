@@ -1,0 +1,319 @@
+body{
+    background-color: rgb(40, 47, 61);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px;
+}
+
+.header{
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    padding-left: 10px;
+}
+
+.header h1, h2{
+    font-size: 40px; 
+    color: rgb(255, 255, 255);
+}
+
+.header h2{
+    font-size: 25px; 
+    padding: 3px; 
+    padding-right : 5px; 
+    text-align: right; 
+    background-color: rgba(201, 221, 238, 0.123); 
+    box-shadow: 0.2px 0.2px 1px black; 
+    border-radius: 5px;
+}
+
+.cover_depan{
+    display: grid;
+    grid-template-columns: 40% 60%; 
+    padding: 5px;
+    margin-top:0px;
+}
+
+
+.bagianForm{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.bagianForm h2{
+    text-align: left;
+    
+    font-size: 230%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.bagianForm form{
+    width : 90%;
+    margin : 1% auto;
+    
+}
+
+#bookFormIsComplete{
+    width : 20px;
+    box-shadow: 0px 0px 0px;
+}
+
+.bagianForm label{
+    font-size: 150%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+
+.bagianForm input {
+    width : 105%;
+    height : 40px;
+    border-radius: 12px;
+    box-shadow: 1px 0.5px 0.5px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    font-size: 25px;
+}
+
+.bagianForm  button {
+    font-style: bold;
+    font-size: 160%;
+    width : 105%;
+    height : 60px;
+    border-radius: 12px;
+    border: 0px solid #f000;
+    background-color: rgb(236, 217, 236);
+    cursor: pointer;
+}
+
+.bagianForm  button:hover{
+    background-color:rgb(238, 11, 106);
+    color:aliceblue;
+    transition: 100ms;
+}
+
+.component{
+    margin-bottom: 1%;
+}
+
+.option h2{
+    font-size: 20px;
+}
+
+/*result=====================================================*/
+
+#siap{
+    background-color: rgb(0, 0, 0);   
+    padding: 5px;
+    box-shadow: 0.2px 0.2px 1px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+.option{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.option button{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 80%;
+    border: 0px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#ButtonSetting{
+    background-color: transparent;
+    margin-left: 90%;
+    border: 5px solid rgba(253, 252, 252, 0);
+}
+
+
+.option button:hover{
+    background-color:rgb(14, 13, 13);
+    color:aliceblue;
+    transition: 100ms;
+}
+
+#incompleteBookList,#completeBookList{
+    height: 400px;
+    overflow-y: scroll;
+    padding: 5px;
+   
+}
+
+
+.componentDone, .component_yang_sama{
+    background-color: rgb(241, 245, 244);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height : 150px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1000ms;
+}
+
+.componentUpdate, .component_yang_sama{
+    background-color: rgb(241, 245, 244);
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1000ms;
+}
+
+
+.componentDone h3{
+    margin-top: 0px;
+}
+
+
+
+/*Update & Search Form ======================"*/
+
+
+#searchBook input {
+    width : 50%;
+    height : 40px;
+    border-radius: 5px;
+    border: 0px solid #f000;
+    padding: 3px;
+}
+
+#searchBook button{
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    height : 40px  ;
+    width : 20%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+    margin-top: 10px;
+}
+
+#searchBook button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#UpdateForm input {
+    width : 100%;
+    height : 25px;
+    border-radius: 20px;
+    border: 0px solid #f000;
+}
+
+#ButtonSetting2{
+    background-color: transparent;
+    margin-left: 90%;
+    border: 10px solid #f000;
+}
+
+#ButtonSetting2 :hover{
+    background-color : rgb(162, 169, 173);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+#ButtonSetting :hover{
+    background-color : rgb(226, 235, 240);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+/* Responsive adjustments for smartphone screens */
+@media only screen and (max-width: 900px) {
+
+    body {
+        padding: 5px;
+        font-size: 90%;
+    }
+
+    .header{
+        display: block;
+    }
+    
+    .header h2{
+        background-color: transparent;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    .cover_depan{
+        display: block;
+    }
+
+    .bagianForm {
+        padding: 15px;
+    }
+
+    .bagianForm h2 {
+        font-size: 180%;
+    }
+
+    .bagianForm form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bagianForm label {
+        font-size: 120%;
+    }
+
+    .bagianForm input {
+        font-size: 18px;
+        height: 35px;
+    }
+
+    .bagianForm button {
+        font-size: 140%;
+        height: 50px;
+    }
+
+    .option {
+        grid-template-columns: 1fr; /* Single column for buttons */
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .option button {
+        font-size: 18px;
+        margin-left: 0;
+        padding: 8px;
+        width: 100%;
+    }
+
+    #searchBook input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #searchBook button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #incompleteBookList, #completeBookList {
+        height: 300px;
+    }
+
+    .componentDone, .component_yang_sama {
+        grid-template-columns: 1fr; /* Single column layout for components */
+        height: auto;
+    }
+
+    #ButtonSetting, #ButtonSetting2 {
+        margin-left: 0;
+    }
+}

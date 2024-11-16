@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type = "module" src="js/main.js"></script>
+</head>
+
+<body>
+  <header >
+    <div class="header">
+      <div>
+        <h1 >Bookshelf App</h1>
+      </div>
+      <div>
+        <h2 class = "subheader">Solusi Sederhana untuk Manajemen Koleksi Buku</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="cover_depan">
+      <div>
+        <div><img id="gambarbagianhome" src="aset/Lovepik_com-380591296-pile-of-books-vector-cartoon-sticker-a-pile-of-books.png" alt="" width="100%"></div>
+      </div>
+      <div class="bagianForm">
+        <h2>Tambah Buku Baru</h2>
+      <form id="bookForm" data-testid="bookForm">
+        <div class="component">
+          <label for="bookFormTitle">Judul</label>
+          <br>
+          <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" />
+        </div>
+        <div class="component">
+          <label for="bookFormAuthor">Penulis</label>
+          <br>
+          <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
+        </div>
+        <div class="component">
+          <label for="bookFormYear">Tahun</label>
+          <br>
+          <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" />
+        </div>
+        <div class="component">
+          <label for="bookFormIsComplete">Selesai dibaca</label>
+          <br>
+          <input id="bookFormIsComplete" type="checkbox" data-testid="bookFormIsCompleteCheckbox" />
+        </div>
+        <button id="bookFormSubmit" type="submit" data-testid="bookFormSubmitButton">
+          <b>Tambahkan Data</b>
+        </button>
+      </form>
+      </div>
+      
+    </div>
+
+    <section>
+      <h2 style="color: rgb(255, 255, 255);">Search Data </h2>
+      <form id="searchBook" data-testid="searchBookForm">
+        <input id="searchBookTitle" type="text" data-testid="searchBookFormTitleInput" placeholder="Search By Title"/>
+        <br>
+        <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton" hidden>
+          Telusuri
+        </button >
+        <input type="checkbox" id="isTrue" hidden>
+        <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton" hidden>
+          Telusuri
+        </button >
+        <button id="searchSubmit2" type="submit" data-testid="searchBookFormSubmitButton" hidden>
+          Akhiri Proses
+        </button >
+      </form>
+      <div id="SearchTitle" hidden>
+        <h2 id="result"></h2>
+      </div>
+    </section>
+
+    <div>
+      <div id="siap">
+        <div class="option">
+          <div>
+            <h2 style="color: aliceblue; margin-top: 0px; margin-bottom: 0px;">Belum selesai dibaca (<span id="countNot"></span>)</h2>
+          </div>
+          <div>
+            <button id="DisplayDone" >View Data</button>
+            <input type="checkbox" id="DisplayCheck" hidden>
+          </div>
+        </div>
+        <div id="incompleteBookList" data-testid="incompleteBookList" hidden>
+          <!-- 
+              Ini adalah struktur HTML untuk masing-masing buku.
+              Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+            -->
+  
+        </div>
+      </div>
+  
+      <div id="siap">
+        <div class="option">
+          <div>
+            <h2 style="color: aliceblue; margin-top: 0px; margin-bottom: 0px;">selesai dibaca (<span id="countDone"></span>)</h2>
+          </div>
+          <div>
+            <button id="DisplayDone2" >View Data</button>
+            <input type="checkbox" id="DisplayCheck2" hidden>
+          </div>
+        </div>
+  
+        <div id="completeBookList" data-testid="completeBookList" hidden>
+          <!-- 
+              Ini adalah struktur HTML untuk masing-masing buku.
+              Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+            -->
+  
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
